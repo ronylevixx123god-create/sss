@@ -6,3 +6,6 @@ port: ""
 rewards:
   - "lootbox_phantom"
   - "lootbox_release"
+
+discord-webhooks:
+  lootboxes: ""

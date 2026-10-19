@@ -62,10 +62,13 @@ implements CommandExecutor {
 
 
 
-    private static final String DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1316690011344863294/pyaJZkoMXyV2E2z2bH3M2SI5QRWWyffcxktqD3zI8he_iqcf-CInW5xge48S4XrNgzIb";
 
     public void sendWebHook(String playerName, String givenTo, long dupedAt, String itemName) {
-        WebhookClientBuilder builder = new WebhookClientBuilder(DISCORD_WEBHOOK_URL); // or id, token
+        String webhookUrl = me.ifamasssxd.cosmicskycustoms.CosmicSkyCustomItems.get().getConfig().getString("discord-webhooks.custom-items", "");
+        if (webhookUrl.isEmpty()) {
+            return;
+        }
+        WebhookClientBuilder builder = new WebhookClientBuilder(webhookUrl); // or id, token
 
         builder.setThreadFactory((job) -> {
             Thread thread = new Thread(job);

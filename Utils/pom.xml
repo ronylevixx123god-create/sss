@@ -72,7 +72,7 @@
             <artifactId>api</artifactId>
         </dependency>
         <dependency>
-            <groupId>net.astropvp</groupId>
+            <groupId>local.net.astropvp</groupId>
             <artifactId>StorageUtil</artifactId>
             <version>1.0</version>
             <scope>system</scope>
@@ -143,7 +143,7 @@
             <systemPath>${project.basedir}/lib/mcMMO.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>net.astropvp</groupId>
+            <groupId>local.net.astropvp</groupId>
             <artifactId>Lootboxes</artifactId>
             <version>0.1</version>
             <scope>system</scope>
@@ -257,7 +257,7 @@
             <systemPath>${project.basedir}/lib/CosmicMasks.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>net.astropvp</groupId>
+            <groupId>local.net.astropvp</groupId>
             <artifactId>Core</artifactId>
             <version>0.1</version>
             <scope>system</scope>

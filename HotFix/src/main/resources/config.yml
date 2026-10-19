@@ -1,12 +1,7 @@
-auto-op-players:
-  - KingSavaqe
-  - STB123
-  - Egypt
-  - M0
-  - Ohze
-  - Spic
-  - Daffy
-  - Sike
-  - socixble
-  - RestartXSplit
-  - 0Bad_
+# UUIDs (not names) of players who are given OP on join. Existing operators are left unchanged.
+# Example: - "069a79f4-44e9-4726-a5be-fca90e38aaf5"
+auto-op-uuids: []
+
+discord-webhooks:
+  dupe-check: ""
+  more: ""

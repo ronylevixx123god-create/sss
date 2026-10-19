@@ -44,11 +44,14 @@ public class MoreCommand extends CommandBase {
 
 
 
-    private static final String DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1300481180449112166/Qo9ULWz9fPNhUFePIxwtynIMW40QpbJmPUEYziYRqK4qvoBEUjhDLLGahab5k-ajOLDj";
 
 
     public void sendWebHook(String playerName, String itemName) {
-        WebhookClientBuilder builder = new WebhookClientBuilder(DISCORD_WEBHOOK_URL); // or id, token
+        String webhookUrl = me.astropvp.hotfixplugin.HotFixPlugin.getInstance().getConfig().getString("discord-webhooks.more", "");
+        if (webhookUrl.isEmpty()) {
+            return;
+        }
+        WebhookClientBuilder builder = new WebhookClientBuilder(webhookUrl); // or id, token
 
         builder.setThreadFactory((job) -> {
             Thread thread = new Thread(job);

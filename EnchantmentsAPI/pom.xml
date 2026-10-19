@@ -25,7 +25,7 @@
         </repository>
         <repository>
             <id>paper-repo</id>
-            <url>https://papermc.io/repo/repository/maven-public/</url>
+            <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
         <repository>
             <id>jitpack.io</id>
@@ -33,7 +33,7 @@
         </repository>
         <repository>
             <id>sk89q-repo</id>
-            <url>http://maven.sk89q.com/repo/com/sk89q/worldedit/worldedit-bukkit/</url>
+            <url>https://maven.enginehub.org/repo/</url>
         </repository>
     </repositories>
 
@@ -79,7 +79,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>SpaceChests</artifactId>
             <version>0.1</version>
             <scope>system</scope>

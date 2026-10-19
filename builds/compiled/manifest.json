@@ -1,0 +1,1105 @@
+{
+  "source_commit": "10b09baceec81a2ea97407d9f81f142902182ac5",
+  "original_sss_main_preserved": "e437ebe555d66cc869d8ece8e39b60445f46e994",
+  "branch": "integration",
+  "compiled_artifacts": 76,
+  "build_reactor_entries": 77,
+  "native_tests_passed": 127,
+  "review_tests_passed": 61,
+  "runner_tests_passed": 10,
+  "excluded_reactor_entries": [
+    "AstroFactions",
+    "AstroFactions/modules/Main",
+    "AstroFactions/modules/Legacy",
+    "Trials",
+    "PlayerVaultsX"
+  ],
+  "runtime_probe": "ArkkitAliasProbe",
+  "runtime_probe_passed": true,
+  "runtime_staged_plugins": 90,
+  "runtime_startup_has_errors": true,
+  "runtime_startup_error_lines": 109,
+  "runtime_run": "20261019T103604Z-53be2710",
+  "artifacts": [
+    {
+      "module": "StorageUtil",
+      "path": "builds/compiled/StorageUtil/StorageUtil-0.1-shaded.jar",
+      "source_path": "StorageUtil/target/StorageUtil-0.1-shaded.jar",
+      "sha256": "23b6f637df1147a48fce24b01ba46596a1ff8da5f0a35ce8a44f53f69101e0d6",
+      "bytes": 273149,
+      "plugin_name": "StorageUtil",
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Utils",
+      "path": "builds/compiled/Utils/CosmicPvPUtils.jar",
+      "source_path": "Utils/target/CosmicPvPUtils.jar",
+      "sha256": "94e24d57256bb477fce827745064effe87038a798c50c485fd7ef6fe249f7cea",
+      "bytes": 3332514,
+      "plugin_name": "CosmicPvPUtils",
+      "hard_dependencies": [
+        "WorldGuard"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Ark",
+      "path": "builds/compiled/Ark/Arkkit.jar",
+      "source_path": "Ark/target/Arkkit.jar",
+      "sha256": "d22fc4325686e4abcdae6492fbfd414a5ce8333d431ea8b58ca0932af5f1eff1",
+      "bytes": 571138,
+      "plugin_name": "Arkkit",
+      "hard_dependencies": [
+        "WorldGuard"
+      ],
+      "native_test_count": 6,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Enchantments",
+      "path": "builds/compiled/Enchantments/Enchantments.jar",
+      "source_path": "Enchantments/target/Enchantments.jar",
+      "sha256": "93c89cd6c3b3a9a89412004b6b384f1e4a42b3eb63e95332a658170fbf6813b0",
+      "bytes": 745313,
+      "plugin_name": "Enchantments",
+      "hard_dependencies": [
+        "EnchantmentAPI",
+        "Essentials",
+        "CosmicSkyCustomItems",
+        "ParticleLIB"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AuctionHouse",
+      "path": "builds/compiled/AuctionHouse/AuctionHouse-0.1.jar",
+      "source_path": "AuctionHouse/target/AuctionHouse-0.1.jar",
+      "sha256": "971b61283df2e065ccd75862aecb65210f99c13fdb61ec94c844b72e64970144",
+      "bytes": 195827,
+      "plugin_name": "Auction",
+      "hard_dependencies": [
+        "Vault",
+        "CosmicPvPUtils"
+      ],
+      "native_test_count": 3,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "SpaceChests",
+      "path": "builds/compiled/SpaceChests/SpaceChests-0.1.jar",
+      "source_path": "SpaceChests/target/SpaceChests-0.1.jar",
+      "sha256": "26f499910cdc7991fcc5bb2622293d603c9be9a31a3cb40918f5b9d5232867aa",
+      "bytes": 159836,
+      "plugin_name": "CosmicSpaceChests",
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Bosses",
+      "path": "builds/compiled/Bosses/CosmicBosses.jar",
+      "source_path": "Bosses/target/CosmicBosses.jar",
+      "sha256": "976c1739f50363b3437eedf690acdad4eb432ee4e49a425f5b5034a477b99e38",
+      "bytes": 509989,
+      "plugin_name": "CosmicBosses",
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Slotbot",
+      "path": "builds/compiled/Slotbot/Slotbot-0.1.jar",
+      "source_path": "Slotbot/target/Slotbot-0.1.jar",
+      "sha256": "c267747bbebfe369bdce09e2a039e9f475bbb2cac9736ce957d090a33c3843bb",
+      "bytes": 36095,
+      "plugin_name": "AstroSlotBot",
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Core",
+      "path": "builds/compiled/Core/AstroCore.jar",
+      "source_path": "Core/target/AstroCore.jar",
+      "sha256": "b140167846e0c64d0f28869a5bdc4a7e78b0ff5e53e57a8cb7e6b0262c711788",
+      "bytes": 737794,
+      "plugin_name": "AstroCore",
+      "hard_dependencies": [
+        "Vault",
+        "Essentials",
+        "CosmicPvPUtils",
+        "Arkkit",
+        "WorldGuard",
+        "StorageUtil",
+        "EnchantmentAPI",
+        "Enchantments"
+      ],
+      "native_test_count": 22,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Attributes",
+      "path": "builds/compiled/Attributes/Attributes-0.1.jar",
+      "source_path": "Attributes/target/Attributes-0.1.jar",
+      "sha256": "95d5ee04853d587e6de4b0ff5350d17b95236dda79cbbe8c349b02cb4c16af40",
+      "bytes": 56889,
+      "plugin_name": "AstroAttributes",
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "CustomItems",
+      "path": "builds/compiled/CustomItems/CustomItems-0.1.jar",
+      "source_path": "CustomItems/target/CustomItems-0.1.jar",
+      "sha256": "bd3ae19f15ad61ecd818e0065769b2a6adfd8b261c400d8ae5e31b42adbe63c4",
+      "bytes": 31859,
+      "plugin_name": "CosmicSkyCustomItems",
+      "hard_dependencies": [
+        "CosmicPvPUtils"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Explosive",
+      "path": "builds/compiled/Explosive/Explosive.jar",
+      "source_path": "Explosive/target/Explosive.jar",
+      "sha256": "435b3da98b45a4770e0c79d96d26437d7218e8300595c65a5e3ae70c9b367478",
+      "bytes": 27464,
+      "plugin_name": "CosmicCustomTNT",
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "KoTHs",
+      "path": "builds/compiled/KoTHs/KoTHs-0.1.jar",
+      "source_path": "KoTHs/target/KoTHs-0.1.jar",
+      "sha256": "7dc968ea33eaa03f8cf5731cbe5846b353651cd07ebaa287b939d11666718b09",
+      "bytes": 141913,
+      "plugin_name": "CosmicKOTH",
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroDamageHandler",
+      "path": "builds/compiled/AstroDamageHandler/AstroDamageHandler-0.1.jar",
+      "source_path": "AstroDamageHandler/target/AstroDamageHandler-0.1.jar",
+      "sha256": "d7ebc27b340ce2f3c2e6c2c10a4071f1dd6362e8e8a565b48452f892194aa7e0",
+      "bytes": 8820,
+      "plugin_name": "AstroDamageHandler",
+      "hard_dependencies": [
+        "CosmicPvPUtils"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroArmorSets",
+      "path": "builds/compiled/AstroArmorSets/AstroArmorSets-0.1.jar",
+      "source_path": "AstroArmorSets/target/AstroArmorSets-0.1.jar",
+      "sha256": "4e508292ccc2c6443d2d79e6d16a2ed5493ca247bb27e42b9921b05e7b840e2b",
+      "bytes": 166568,
+      "plugin_name": "AstroArmorSets",
+      "hard_dependencies": [
+        "CosmicPvPUtils",
+        "CosmicSkyCustomItems",
+        "NBTAPI",
+        "Enchantments",
+        "EnchantmentAPI"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "ItemSkins",
+      "path": "builds/compiled/ItemSkins/ItemSkins-0.1.jar",
+      "source_path": "ItemSkins/target/ItemSkins-0.1.jar",
+      "sha256": "2ee0f889914748817354dca558a63fa0d374034952eb26355a5343f4f49ac9f5",
+      "bytes": 363613,
+      "plugin_name": "AstroItemSkins",
+      "hard_dependencies": [
+        "CosmicSkyCustomItems"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Duels",
+      "path": "builds/compiled/Duels/CosmicDuel.jar",
+      "source_path": "Duels/target/CosmicDuel.jar",
+      "sha256": "bf4b3ad86a35e769c38c9c11036bbf6e55834c85133edf47b7b97943ab3920ad",
+      "bytes": 353275,
+      "plugin_name": "CosmicDuel",
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Conquest",
+      "path": "builds/compiled/Conquest/Conquest-0.1.jar",
+      "source_path": "Conquest/target/Conquest-0.1.jar",
+      "sha256": "becb68e5539ff1368b00b18196e72e7f47bce4052607d1f55bee2d2938596984",
+      "bytes": 38863,
+      "plugin_name": "CosmicConquests",
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Kits",
+      "path": "builds/compiled/Kits/Kits.jar",
+      "source_path": "Kits/target/Kits.jar",
+      "sha256": "794934fd436cf308e44eed2b2ed987682e069e8ff43a3c38a1f99de2b84cfdd5",
+      "bytes": 100179,
+      "plugin_name": "CosmicGlobalKits",
+      "hard_dependencies": [
+        "CosmicSkyCustomItems",
+        "CosmicPvPUtils"
+      ],
+      "native_test_count": 38,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Pets",
+      "path": "builds/compiled/Pets/CosmicSkyInventoryPets.jar",
+      "source_path": "Pets/target/CosmicSkyInventoryPets.jar",
+      "sha256": "30e861fab0fe48908224cbefd11be1339124dcc3b687c1dc9191fa5d9d67609a",
+      "bytes": 1146916,
+      "plugin_name": "CosmicSkyInventoryPets",
+      "hard_dependencies": [
+        "CosmicPvPUtils",
+        "CosmicSkyCustomItems",
+        "Factions"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Disguises",
+      "path": "builds/compiled/Disguises/Disguises-0.1.jar",
+      "source_path": "Disguises/target/Disguises-0.1.jar",
+      "sha256": "7a911752dcf653f6c370f232ffa4d713442b58489f6926b2b0a82c832784dead",
+      "bytes": 25111,
+      "plugin_name": "CosmicDisguises",
+      "hard_dependencies": [
+        "LibsDisguises"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Masks",
+      "path": "builds/compiled/Masks/CosmicMasks.jar",
+      "source_path": "Masks/target/CosmicMasks.jar",
+      "sha256": "8aebdb4a71929cdc1fbcf12149109082f5675c98296fb3a9cb530cba655342f8",
+      "bytes": 64926,
+      "plugin_name": "CosmicMasks",
+      "hard_dependencies": [
+        "ProtocolLib",
+        "CosmicPvPUtils"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Dungeon",
+      "path": "builds/compiled/Dungeon/CosmicDungeons.jar",
+      "source_path": "Dungeon/target/CosmicDungeons.jar",
+      "sha256": "e604be4616427ffa67a3d3f3a3a435f733f9a0740da96ef1270e1b461f8d0e8c",
+      "bytes": 373711,
+      "plugin_name": "CosmicDungeons",
+      "hard_dependencies": [
+        "CosmicSkyCustomItems"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Lootboxes",
+      "path": "builds/compiled/Lootboxes/Lootboxes-0.1.jar",
+      "source_path": "Lootboxes/target/Lootboxes-0.1.jar",
+      "sha256": "cf1bdd7e12879f7dcd40f2afc238be2673a549b333cd493b06b1a5171691c670",
+      "bytes": 75236,
+      "plugin_name": "CosmicMysteryChest",
+      "hard_dependencies": [
+        "CosmicPvPUtils",
+        "Arkkit",
+        "StorageUtil"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Contest",
+      "path": "builds/compiled/Contest/Contest-0.1.jar",
+      "source_path": "Contest/target/Contest-0.1.jar",
+      "sha256": "45ebe4757fc044b4ef93c996c750d970c21c246fa64c2cae4bb342f60abe923d",
+      "bytes": 95079,
+      "plugin_name": "CosmicContests",
+      "hard_dependencies": [
+        "Arkkit"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "EnchantmentsAPI",
+      "path": "builds/compiled/EnchantmentsAPI/EnchantmentsAPI.jar",
+      "source_path": "EnchantmentsAPI/target/EnchantmentsAPI.jar",
+      "sha256": "32588b49a97206181bbb1e6a5736a090e2d34ba2554c11bb7d0cbbbe24986134",
+      "bytes": 121932,
+      "plugin_name": "EnchantmentAPI",
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "LootTable",
+      "path": "builds/compiled/LootTable/LootTable.jar",
+      "source_path": "LootTable/target/LootTable.jar",
+      "sha256": "dfc1e1d87cc1f2c442deaea683a045ed1f7b06b75b0004f26d16aec95135a633",
+      "bytes": 28988,
+      "plugin_name": "AstroLoottables",
+      "hard_dependencies": [
+        "CosmicPvPUtils",
+        "StorageUtil"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "LootFilter",
+      "path": "builds/compiled/LootFilter/LootFilter-0.1.jar",
+      "source_path": "LootFilter/target/LootFilter-0.1.jar",
+      "sha256": "5d15546851e960dd34071be4ce62ac72afbc76b05d7b918a29ba86d5b14d0424",
+      "bytes": 289554,
+      "plugin_name": "AstroLootFilter",
+      "hard_dependencies": [
+        "CosmicPvPUtils",
+        "StorageUtil",
+        "AstroSlotBot"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroCollect",
+      "path": "builds/compiled/AstroCollect/Collect.jar",
+      "source_path": "AstroCollect/target/Collect.jar",
+      "sha256": "7bb43b6084547dd19c4325373ed8d3b43bf9d02ec6524e69abd993f579ced82d",
+      "bytes": 26629,
+      "plugin_name": "Collect",
+      "hard_dependencies": [
+        "StorageUtil"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroEvents",
+      "path": "builds/compiled/AstroEvents/AstroEvents-1.0.jar",
+      "source_path": "AstroEvents/target/AstroEvents-1.0.jar",
+      "sha256": "33d2d48b62070d79bd8e8090233eb088147089b8222511dd707ca09a1ee0ba55",
+      "bytes": 4294035,
+      "plugin_name": "AstroEvents",
+      "hard_dependencies": [
+        "HolographicDisplays",
+        "CosmicMysteryChest"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroCrateKeys",
+      "path": "builds/compiled/AstroCrateKeys/AstroCrateKeys.jar",
+      "source_path": "AstroCrateKeys/target/AstroCrateKeys.jar",
+      "sha256": "8810f100c8c520968c166209a1a9767523cee6e2df478dbe9dff405efdef1b49",
+      "bytes": 29121,
+      "plugin_name": "AstroCrateKeys",
+      "hard_dependencies": [
+        "CosmicPvPUtils"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "CustomBlocks",
+      "path": "builds/compiled/CustomBlocks/CustomBlocks.jar",
+      "source_path": "CustomBlocks/target/CustomBlocks.jar",
+      "sha256": "4268f53a83c0cd2fb0ce03c75fcb4f070a58a031193a5d2bb74c33a54eaa5655",
+      "bytes": 134214,
+      "plugin_name": "CustomSkullBlocks",
+      "hard_dependencies": [
+        "Vault",
+        "Factions",
+        "CosmicMysteryChest",
+        "CosmicPvPUtils",
+        "AstroSpawners",
+        "ProtocolLib"
+      ],
+      "native_test_count": 6,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "CCVerify",
+      "path": "builds/compiled/CCVerify/CCVerify-1.0.jar",
+      "source_path": "CCVerify/target/CCVerify-1.0.jar",
+      "sha256": "d53148aa4fb3a47ac33d25554ed22bb53f6eb1055789404e61bbeb0c49a82035",
+      "bytes": 96741,
+      "plugin_name": "CCVerify",
+      "hard_dependencies": [
+        "ProtocolLib",
+        "BuycraftX",
+        "Factions"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroSpaceGrinding",
+      "path": "builds/compiled/AstroSpaceGrinding/AstroSpaceGrinding-0.1.jar",
+      "source_path": "AstroSpaceGrinding/target/AstroSpaceGrinding-0.1.jar",
+      "sha256": "6419451558a1a619781a69bf2525e1cd9bb152b91fbf01faf3e3a7c1ef5a5721",
+      "bytes": 57913,
+      "plugin_name": "AstroSpaceGrinding",
+      "hard_dependencies": [
+        "AstroSpawners"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Tournaments",
+      "path": "builds/compiled/Tournaments/Tournaments-0.1.jar",
+      "source_path": "Tournaments/target/Tournaments-0.1.jar",
+      "sha256": "7b058a5c93ff8c8e3a17c3acab2db49a8b9e3c31796ffa26cb869fc0f74ffa25",
+      "bytes": 74025,
+      "plugin_name": "AstroTournaments",
+      "hard_dependencies": [
+        "AstroKillCounters",
+        "StorageUtil"
+      ],
+      "native_test_count": 5,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroSpawnersMobcoins",
+      "path": "builds/compiled/AstroSpawnersMobcoins/AstroSpawners.jar",
+      "source_path": "AstroSpawnersMobcoins/target/AstroSpawners.jar",
+      "sha256": "44aafc11d08a3ebfa2ae4e4ccceae913f7343e55f4d352d585c67136d1692139",
+      "bytes": 99996,
+      "plugin_name": "AstroSpawners",
+      "hard_dependencies": [
+        "Multiverse-Core",
+        "StorageUtil",
+        "CosmicMysteryChest"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroScoreboard",
+      "path": "builds/compiled/AstroScoreboard/AstroScoreboard.jar",
+      "source_path": "AstroScoreboard/target/AstroScoreboard.jar",
+      "sha256": "9ad87a023935c89208a3c0fb781c35d0f9ba2c83bd2f283f09231c78b8648c47",
+      "bytes": 36378,
+      "plugin_name": "AstroScoreboard",
+      "hard_dependencies": [
+        "CosmicPvPUtils",
+        "TAB"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "WeaponRunes",
+      "path": "builds/compiled/WeaponRunes/WeaponRunes.jar",
+      "source_path": "WeaponRunes/target/WeaponRunes.jar",
+      "sha256": "6d0a2389dc02be0d6aab0c83fbf2161b777d6feeeebbe832d1a70b3952fbc9b1",
+      "bytes": 31927,
+      "plugin_name": "AstroWeaponBonuses",
+      "hard_dependencies": [
+        "CosmicPvPUtils"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "ItemFlip",
+      "path": "builds/compiled/ItemFlip/AstroItemFlip.jar",
+      "source_path": "ItemFlip/target/AstroItemFlip.jar",
+      "sha256": "e59b7a47a2681f55b6077f5ed967bc18013a69c10746d069ea8128895665f78c",
+      "bytes": 35452,
+      "plugin_name": "AstroItemFlip",
+      "hard_dependencies": [
+        "CosmicPvPUtils"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroRevive",
+      "path": "builds/compiled/AstroRevive/AstroRevive.jar",
+      "source_path": "AstroRevive/target/AstroRevive.jar",
+      "sha256": "2b9db679cc99d8d46d6cba556199a046b7c7493e852af92f59ffef2e05d6b030",
+      "bytes": 3142856,
+      "plugin_name": "AstroRevive",
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "HotFix",
+      "path": "builds/compiled/HotFix/HotFix.jar",
+      "source_path": "HotFix/target/HotFix.jar",
+      "sha256": "89c2ec0a9278afc98eb4eee15cb3e2927027993a84c797ea2f3d9348643c3a39",
+      "bytes": 47522,
+      "plugin_name": "HotFix",
+      "hard_dependencies": [
+        "CosmicPvPUtils"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "FactionBanners",
+      "path": "builds/compiled/FactionBanners/FactionBanners.jar",
+      "source_path": "FactionBanners/target/FactionBanners.jar",
+      "sha256": "c7d4bdc8a762985c6d9eb2b8489491b25e215c6e8bdfb53305d05ed95bb4b3fd",
+      "bytes": 30809,
+      "plugin_name": "CosmicFactionBanners",
+      "hard_dependencies": [
+        "CosmicPvPUtils",
+        "Factions",
+        "CosmicSkyCustomItems"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "CosmicShop",
+      "path": "builds/compiled/CosmicShop/CosmicShop.jar",
+      "source_path": "CosmicShop/target/CosmicShop.jar",
+      "sha256": "8640ba5b6692ae72d31ad0a2347b805029b77af56d22a2c1fcc70edb6a6e133b",
+      "bytes": 79137,
+      "plugin_name": "CosmicGUIShop",
+      "hard_dependencies": [
+        "Vault"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "NebulaShop",
+      "path": "builds/compiled/NebulaShop/NebulaShop.jar",
+      "source_path": "NebulaShop/target/NebulaShop.jar",
+      "sha256": "4b686a9c0de38f2570e9fc4f0c73eaa7e61e4784245f79263e6c8a96d2dcdf99",
+      "bytes": 19629,
+      "plugin_name": "NebulaShop",
+      "hard_dependencies": [
+        "Commons",
+        "CosmicPvPUtils",
+        "StorageUtil"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroCollectors",
+      "path": "builds/compiled/AstroCollectors/AstroCollectors-1.0-SNAPSHOT.jar",
+      "source_path": "AstroCollectors/target/AstroCollectors-1.0-SNAPSHOT.jar",
+      "sha256": "2ec004124ddec4cb23fbe10d674a2f6b891cfbcbe5ae0c97d40aaa20dc9098b2",
+      "bytes": 4209363,
+      "plugin_name": "AstroCollectors",
+      "hard_dependencies": [
+        "Factions",
+        "AstroSpawners",
+        "Essentials",
+        "Arkkit",
+        "HolographicDisplays"
+      ],
+      "native_test_count": 11,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroGamble",
+      "path": "builds/compiled/AstroGamble/AstroGamble-0.1.jar",
+      "source_path": "AstroGamble/target/AstroGamble-0.1.jar",
+      "sha256": "cea3f2aa3cc2e4899e7188d8438c6adc1cfee4ed44f31762fa0b5de5b738e170",
+      "bytes": 111012,
+      "plugin_name": "AstroGambling",
+      "hard_dependencies": [
+        "CosmicPvPUtils",
+        "StorageUtil"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "GiftcardShop",
+      "path": "builds/compiled/GiftcardShop/GiftcardShop-1.0.jar",
+      "source_path": "GiftcardShop/target/GiftcardShop-1.0.jar",
+      "sha256": "f02816c284784731804d2abf2452af1b249e890a06c897347c28e01e4726b05f",
+      "bytes": 1690290,
+      "plugin_name": "AstroGiftCardPlugin",
+      "hard_dependencies": [],
+      "native_test_count": 6,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroWildPvP",
+      "path": "builds/compiled/AstroWildPvP/AstroWildPvP.jar",
+      "source_path": "AstroWildPvP/target/AstroWildPvP.jar",
+      "sha256": "bffe60aaa0a209d112303c93c9786009c46ad3543ad03759e46a41921d0c9f4f",
+      "bytes": 43068716,
+      "plugin_name": "AstroWildPvP",
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "ProxyPatch",
+      "path": "builds/compiled/ProxyPatch/ProxyPatch-0.1.jar",
+      "source_path": "ProxyPatch/target/ProxyPatch-0.1.jar",
+      "sha256": "6531c1122122d448d9e4b8c38616383a44f8d9954070297d56585f2f0cec0b5e",
+      "bytes": 16450,
+      "plugin_name": "ProxyPatch",
+      "hard_dependencies": [
+        "CosmicPvPUtils"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "MobCoins",
+      "path": "builds/compiled/MobCoins/MobCoins.jar",
+      "source_path": "MobCoins/target/MobCoins.jar",
+      "sha256": "5f4cfd2292cf966b64599fc67be974e6bb44e974672558e2faf698515971bee1",
+      "bytes": 37592,
+      "plugin_name": "AstroMobCoins",
+      "hard_dependencies": [
+        "CosmicPvPUtils",
+        "StorageUtil"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroCagePvP",
+      "path": "builds/compiled/AstroCagePvP/AstroCagePvP-1.0.jar",
+      "source_path": "AstroCagePvP/target/AstroCagePvP-1.0.jar",
+      "sha256": "9a1eddb9856d7050905de6c1d56190f9d611ece6472fd64cf24ab9cd2b04cc47",
+      "bytes": 78996,
+      "plugin_name": "AstroCagePvP",
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Outpost",
+      "path": "builds/compiled/Outpost/Outpost-0.1.jar",
+      "source_path": "Outpost/target/Outpost-0.1.jar",
+      "sha256": "480a9bdfc06fa69310623d078afa47a72bd81de7665ab9e0622376f63c57193c",
+      "bytes": 16232,
+      "plugin_name": "OutpostPatches",
+      "hard_dependencies": [],
+      "native_test_count": 3,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "FactionLogs",
+      "path": "builds/compiled/FactionLogs/FactionLogs.jar",
+      "source_path": "FactionLogs/target/FactionLogs.jar",
+      "sha256": "bb5417c84693b852a7e9f6b8d1678ec8866929b28c1e68a6211f3f5004cebce5",
+      "bytes": 45753,
+      "plugin_name": "FactionLogs",
+      "hard_dependencies": [
+        "AstroKillCounters"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": false,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroDiscordSync",
+      "path": "builds/compiled/AstroDiscordSync/AstroDiscordSync-0.1.jar",
+      "source_path": "AstroDiscordSync/target/AstroDiscordSync-0.1.jar",
+      "sha256": "7dc60acb556d1e6f5502796bc247df1c14c9ab7f3ff0daf250eb49ede8521b96",
+      "bytes": 3916977,
+      "plugin_name": "AstroDiscordSync",
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroEnvoy",
+      "path": "builds/compiled/AstroEnvoy/AstroEnvoy-1.0.jar",
+      "source_path": "AstroEnvoy/target/AstroEnvoy-1.0.jar",
+      "sha256": "54f7ab9862c81ef74595c5f4c274fe6657b7a13889d54ee47111e6f55302484a",
+      "bytes": 27417,
+      "plugin_name": "AstroEnvoys",
+      "hard_dependencies": [
+        "CosmicPvPUtils"
+      ],
+      "native_test_count": 8,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "MysteryChests",
+      "path": "builds/compiled/MysteryChests/MysteryChests.jar",
+      "source_path": "MysteryChests/target/MysteryChests.jar",
+      "sha256": "a981bae0fcc9ee4884e0a4fa7d979f74d47da764693a7b4b1a738c9a8c3be8e4",
+      "bytes": 446852,
+      "plugin_name": "AstroLootboxes",
+      "hard_dependencies": [
+        "CosmicPvPUtils",
+        "StorageUtil"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AdminItems",
+      "path": "builds/compiled/AdminItems/AdminItems.jar",
+      "source_path": "AdminItems/target/AdminItems.jar",
+      "sha256": "cc03ac4aff23474895b3bf09f7de44ebfa46464b643c1fad94aee76fe17fb282",
+      "bytes": 49003,
+      "plugin_name": "AstroAdminItems",
+      "hard_dependencies": [
+        "CosmicPvPUtils"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroItemFilter",
+      "path": "builds/compiled/AstroItemFilter/AstroItemFilter.jar",
+      "source_path": "AstroItemFilter/target/AstroItemFilter.jar",
+      "sha256": "63cbef4a198291ca5f11742a0c11ff4feecc94453842c571c8476deb3833963f",
+      "bytes": 38715,
+      "plugin_name": "AstroItemFilter",
+      "hard_dependencies": [
+        "CosmicPvPUtils"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroChristmas",
+      "path": "builds/compiled/AstroChristmas/AstroChristmas.jar",
+      "source_path": "AstroChristmas/target/AstroChristmas.jar",
+      "sha256": "1e635e5b5aa1284d0b091f237d84feb0fde4f533dafc2f2bdd6da58be692f16d",
+      "bytes": 15837,
+      "plugin_name": "AstroChristmas",
+      "hard_dependencies": [
+        "CosmicPvPUtils",
+        "StorageUtil"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroFactionLogs",
+      "path": "builds/compiled/AstroFactionLogs/AstroFactionLogs.jar",
+      "source_path": "AstroFactionLogs/target/AstroFactionLogs.jar",
+      "sha256": "6f8230fb9e085b4db64e0ece5ad00d3d0e56c3b08f0753dd435895ee74733013",
+      "bytes": 42598,
+      "plugin_name": "FactionLogs",
+      "hard_dependencies": [
+        "CosmicPvPUtils"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "ShowcaseGUI",
+      "path": "builds/compiled/ShowcaseGUI/ShowcaseGUI.jar",
+      "source_path": "ShowcaseGUI/target/ShowcaseGUI.jar",
+      "sha256": "71e8fe8c05e595621839bd3987e58ac694c53993f00d28022e6a483087167fb1",
+      "bytes": 67509,
+      "plugin_name": "AstroShowcase",
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroCustomBlocks",
+      "path": "builds/compiled/AstroCustomBlocks/AstroCustomBlocks.jar",
+      "source_path": "AstroCustomBlocks/target/AstroCustomBlocks.jar",
+      "sha256": "95f42c42bd1f689e8aa0a174898ba6c60ea6e72273c3716f662dd4b402a194b6",
+      "bytes": 86003,
+      "plugin_name": "AstroCustomBlocks",
+      "hard_dependencies": [
+        "Multiverse-Core",
+        "StorageUtil",
+        "CosmicPvPUtils",
+        "Factions"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Arcade",
+      "path": "builds/compiled/Arcade/Arcade.jar",
+      "source_path": "Arcade/target/Arcade.jar",
+      "sha256": "0267009aa2c482274e955cd5a03e01e7fc5847d4d66e6ab917640d1661434007",
+      "bytes": 37298,
+      "plugin_name": "AstroArcade",
+      "hard_dependencies": [
+        "CosmicPvPUtils"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroKits",
+      "path": "builds/compiled/AstroKits/AstroKits.jar",
+      "source_path": "AstroKits/target/AstroKits.jar",
+      "sha256": "e1369652c48b47a0eb4c120676c51be87d99bd4eb7b8e9f44a385aca8b55cf15",
+      "bytes": 3545,
+      "plugin_name": null,
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": false,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroSlotBot",
+      "path": "builds/compiled/AstroSlotBot/AstroSlotBot.jar",
+      "source_path": "AstroSlotBot/target/AstroSlotBot.jar",
+      "sha256": "8a1b02f7ab0de441029e9bf33d6d5a52612f89156314ed7524fa81729c139606",
+      "bytes": 25379,
+      "plugin_name": null,
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": false,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "WildPvP",
+      "path": "builds/compiled/WildPvP/AstroWildPvP.jar",
+      "source_path": "WildPvP/target/AstroWildPvP.jar",
+      "sha256": "97532f44e00bf2ff1ef5d8ecfc175a7b1254cdf693dd81b8d4d776cc294d3dd9",
+      "bytes": 312240,
+      "plugin_name": "AstroWildPvP",
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": false,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Ruins",
+      "path": "builds/compiled/Ruins/Ruins.jar",
+      "source_path": "Ruins/target/Ruins.jar",
+      "sha256": "c1ed1c8268399848201d42e8d7a95832e5cb78be7b153c0ac8099df1cdfbc7f1",
+      "bytes": 299322,
+      "plugin_name": "AstroRuins",
+      "hard_dependencies": [
+        "Commons",
+        "ProtocolLib",
+        "CCVerify"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AstroBAH",
+      "path": "builds/compiled/AstroBAH/AstroBAH-0.1.jar",
+      "source_path": "AstroBAH/target/AstroBAH-0.1.jar",
+      "sha256": "406484f7cc3dbd30197b930afe18202694c8a09110d8d7aa08dd7c07b7f82a21",
+      "bytes": 57400,
+      "plugin_name": "BAH",
+      "hard_dependencies": [
+        "Vault",
+        "CosmicPvPUtils",
+        "Auction"
+      ],
+      "native_test_count": 19,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "HypeBoxes",
+      "path": "builds/compiled/HypeBoxes/HypeBoxes.jar",
+      "source_path": "HypeBoxes/target/HypeBoxes.jar",
+      "sha256": "fab94d203ce1ed50fd802759b82ffbc3afb538b4d97c8bf0352b36fa80c8228f",
+      "bytes": 98858,
+      "plugin_name": "AstroHypeBoxes",
+      "hard_dependencies": [
+        "StorageUtil",
+        "CosmicPvPUtils",
+        "NBTAPI"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "WarzoneChests",
+      "path": "builds/compiled/WarzoneChests/WarzoneChests.jar",
+      "source_path": "WarzoneChests/target/WarzoneChests.jar",
+      "sha256": "cdda1398695d88540f8fd01ba1e84ad1afc84f0468b4e3c3b66111ab47934862",
+      "bytes": 934287,
+      "plugin_name": "AstroWarzoneChests",
+      "hard_dependencies": [
+        "StorageUtil"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "AntiRightClick",
+      "path": "builds/compiled/AntiRightClick/AntiRightClick.jar",
+      "source_path": "AntiRightClick/target/AntiRightClick.jar",
+      "sha256": "dca492f898c031cdf4e0d79bc0f8f880724d748cedaa8777fb277ea86a6c4d5f",
+      "bytes": 6756,
+      "plugin_name": "AstroAntiRightClick",
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "PvPTop",
+      "path": "builds/compiled/PvPTop/PvPTop.jar",
+      "source_path": "PvPTop/target/PvPTop.jar",
+      "sha256": "c806556fa68e66c3e54d75a48a83d41fae8e1cd63062edf82977fa04831dd988",
+      "bytes": 33172,
+      "plugin_name": "AstroPvPTop",
+      "hard_dependencies": [
+        "CosmicPvPUtils",
+        "Factions",
+        "StorageUtil"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "Vouchers",
+      "path": "builds/compiled/Vouchers/Vouchers.jar",
+      "source_path": "Vouchers/target/Vouchers.jar",
+      "sha256": "0bd235e5832d3dcb57e9783a7a3e147f87a95e8be1efc3800037e9e42fac53e3",
+      "bytes": 3070,
+      "plugin_name": null,
+      "hard_dependencies": [],
+      "native_test_count": 0,
+      "staged_in_isolated_run": false,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "ChatGames",
+      "path": "builds/compiled/ChatGames/ChatGames.jar",
+      "source_path": "ChatGames/target/ChatGames.jar",
+      "sha256": "54c419d21e7f9a39050b8d9af36c8e5f606f1a03935105495099e32045392f98",
+      "bytes": 85177,
+      "plugin_name": "ChatGames",
+      "hard_dependencies": [
+        "Kotlin"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "SpaceRecode",
+      "path": "builds/compiled/SpaceRecode/SpaceRecode.jar",
+      "source_path": "SpaceRecode/target/SpaceRecode.jar",
+      "sha256": "54bbe4d21d8a2941926194472cf635f989e87cda76436857ee87092aff004a85",
+      "bytes": 130214,
+      "plugin_name": "SpaceRecode",
+      "hard_dependencies": [
+        "CosmicPvPUtils",
+        "StorageUtil"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    },
+    {
+      "module": "LPXPatches",
+      "path": "builds/compiled/LPXPatches/LPXPatches.jar",
+      "source_path": "LPXPatches/target/LPXPatches.jar",
+      "sha256": "3979a9b118c46c086b31333006bbcc30b33c62a79eb7570556b5d33e04839c6e",
+      "bytes": 2862,
+      "plugin_name": "LPXPatches",
+      "hard_dependencies": [
+        "CosmicPvPUtils"
+      ],
+      "native_test_count": 0,
+      "staged_in_isolated_run": true,
+      "gameplay_compatibility": "Not established by build success or staging"
+    }
+  ]
+}

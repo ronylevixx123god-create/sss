@@ -27,31 +27,19 @@
         </repository>
         <repository>
             <id>paper-repo</id>
-            <url>https://papermc.io/repo/repository/maven-public/</url>
+            <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
         <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
         </repository>
         <repository>
-            <id>puha-repo</id>
-            <url>https://repo.puha.io/repo/</url>
-        </repository>
-        <repository>
-            <id>notnull-uri</id>
-            <url>https://mvnrepository.com/artifact/com.sun.istack/istack-commons-runtime</url>
-        </repository>
-        <repository>
             <id>everything</id>
-            <url>http://repo.citizensnpcs.co/</url>
+            <url>https://maven.citizensnpcs.co/repo</url>
         </repository>
         <repository>
             <id>inventive-repo</id>
             <url>https://repo.inventivetalent.org/content/groups/public/</url>
-        </repository>
-        <repository>
-            <id>kotlin-repo</id>
-            <url>https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-compiler</url>
         </repository>
     </repositories>
 
@@ -73,6 +61,9 @@
             <groupId>io.puharesource.mc</groupId>
             <artifactId>TitleManager</artifactId>
             <version>2.2.0</version>
+            <scope>system</scope>
+            <!-- Official release from github.com/Puharesource/TitleManager (repo.puha.io is gone) -->
+            <systemPath>${project.basedir}/../.lib/TitleManager-2.2.0.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -108,7 +99,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>net.astropvp</groupId>
             <artifactId>Core</artifactId>
             <version>0.1</version>
             <scope>provided</scope>
@@ -241,7 +232,7 @@
 
 
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>Conquest</artifactId>
             <version>0.1</version>
             <scope>system</scope>
@@ -257,7 +248,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>Disguises</artifactId>
             <version>0.1</version>
             <scope>system</scope>
@@ -265,7 +256,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>Bosses</artifactId>
             <version>0.1</version>
             <scope>system</scope>

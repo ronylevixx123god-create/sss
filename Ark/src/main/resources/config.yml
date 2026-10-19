@@ -587,7 +587,7 @@ language:
       - '&e&lMonthly Votes: &b&l[VOTES]'
       - ' '
   xenforo_sync_account:
-    api_key: '9YJW6Qm1OX0Hk47uM0365c2k7mV8med7'
+    api_key: ''
     api_url: 'http://www.arkhamnetwork.org/community/'
 settings:
   blockValue:

@@ -34,10 +34,13 @@ public class HasBeenDupedCommand extends CommandBase {
         }
     }
 
-    private static final String DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1300481180449112166/Qo9ULWz9fPNhUFePIxwtynIMW40QpbJmPUEYziYRqK4qvoBEUjhDLLGahab5k-ajOLDj";
 
     public void sendWebHook(String playerName, long dupedAt, String itemName) {
-        WebhookClientBuilder builder = new WebhookClientBuilder(DISCORD_WEBHOOK_URL); // or id, token
+        String webhookUrl = net.astropvp.core.AstroCore.getInstance().getConfig().getString("discord-webhooks.dupe-check", "");
+        if (webhookUrl.isEmpty()) {
+            return;
+        }
+        WebhookClientBuilder builder = new WebhookClientBuilder(webhookUrl); // or id, token
 
         builder.setThreadFactory((job) -> {
             Thread thread = new Thread(job);

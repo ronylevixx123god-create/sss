@@ -15,6 +15,8 @@ import org.bukkit.entity.*;
 import org.bukkit.inventory.meta.FireworkMeta;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.ThreadLocalRandom;
@@ -38,6 +40,9 @@ public class EnvoyManager implements PlaceholderReplacer {
 
     private FireworkTask fireworkTask;
 
+    // Only entities created by this event may be removed during cleanup.
+    private final Map<Location, ArmorStand> holograms = new HashMap<>();
+
     @Getter @Setter
     private List<Location> locations = new ArrayList<>();
 
@@ -51,15 +56,28 @@ public class EnvoyManager implements PlaceholderReplacer {
     }
 
     public void handleCrateSpawning() {
-        List<Location> locations = new ArrayList<>(getLocations());
-        List<Location> finalLocations = new ArrayList<>();
-        this.currentChests = new ArrayList<>();
         int crates = Bukkit.getOnlinePlayers().size() > 15 ? Bukkit.getOnlinePlayers().size() / 6 : 7;
-        for(int i = 0; i < crates; i++) {
-            Location location = locations.get(ThreadLocalRandom.current().nextInt(0, locations.size() - 1));
-            locations.remove(location);
-            finalLocations.add(location);
+        List<Location> finalLocations = selectLocations(getLocations(), crates);
+        if (finalLocations.size() != crates) {
+            plugin.getLogger().warning("Envoy skipped: not enough distinct, loaded, empty locations. Add locations with /aenvoy setup.");
+            return;
         }
+        spawnCrates(finalLocations);
+    }
+
+    static List<Location> selectLocations(List<Location> saved, int crates) {
+        List<Location> available = saved.stream()
+                .filter(Objects::nonNull)
+                .filter(location -> location.getWorld() != null)
+                .distinct()
+                .filter(location -> location.getBlock().getType() == Material.AIR)
+                .collect(Collectors.toList());
+        if (available.size() < crates) return new ArrayList<>();
+        java.util.Collections.shuffle(available, ThreadLocalRandom.current());
+        return new ArrayList<>(available.subList(0, crates));
+    }
+
+    private void spawnCrates(List<Location> finalLocations) {
         this.remainingCrates = finalLocations.size();
         this.currentChests = finalLocations;
         finalLocations.stream()
@@ -69,6 +87,7 @@ public class EnvoyManager implements PlaceholderReplacer {
                     //crateLocation.getBlock().setType(Material.CHEST);
                     BlockUtils.setBlockFast(crateLocation.getBlock(), Material.CHEST.getId(), (byte)0, false);
                     ArmorStand armorStand = (ArmorStand)crateLocation.getWorld().spawnEntity(crateLocation.clone().add(0.5D, 0.1D, 0.5D), EntityType.ARMOR_STAND);
+                    holograms.put(crateLocation, armorStand);
                     armorStand.setCustomName(CC.translate("&6✧ &e&lEnvoy Crate &6✧"));
                     armorStand.setCustomNameVisible(true);
                     armorStand.setGravity(false);
@@ -87,26 +106,26 @@ public class EnvoyManager implements PlaceholderReplacer {
     }
 
     public void handleCrateRemoving() {
-        this.locations.stream()
+        new ArrayList<>(this.currentChests).stream()
                 .filter(Objects::nonNull)
-                .filter(location -> location.getBlock().getType() == Material.CHEST)
                 .forEach(this::removeCrateAt);
         this.currentChests.clear();
+        this.remainingCrates = 0;
     }
 
     public void removeCrateAt(Location location) {
-        //location.getBlock().setType(Material.AIR);
-        BlockUtils.setAir(location.getBlock(), false);
+        if (location == null || !this.currentChests.remove(location)) return;
+        // A player/plugin may have replaced the chest since it was spawned.
+        if (location.getWorld() != null && location.getBlock().getType() == Material.CHEST) {
+            BlockUtils.setAir(location.getBlock(), false);
+        }
         removeNearbyHologram(location);
-        this.currentChests.remove(location);
     }
 
+    /** Remove only the hologram created for this crate, never nearby decorations. */
     public void removeNearbyHologram(Location location) {
-        for (Entity entity : location.getWorld().getNearbyEntities(location, 0.3D, 0.6D, 0.3D)) {
-            if (!(entity instanceof ArmorStand))
-                continue;
-            entity.remove();
-        }
+        ArmorStand hologram = this.holograms.remove(location);
+        if (hologram != null) hologram.remove();
     }
 
     public void endEnvoyEvent() {
@@ -116,25 +135,37 @@ public class EnvoyManager implements PlaceholderReplacer {
                 .filter(Objects::nonNull) //TODO filter people with envoy messages enabled
                 .forEach(player -> player.sendMessage(CC.translate(EnvoyManager.prefix + "&cThe previous envoy event has ended")));
         this.handleCrateRemoving();
-        this.fireworkTask.cancel();
+        if (this.fireworkTask != null) this.fireworkTask.cancel();
         this.fireworkTask = null;
         //this.plugin.getServer().getScheduler().runTaskLater(this.plugin, this::startEnvoyEvent, 20L * 60 * ThreadLocalRandom.current().nextInt(25, 35));
     }
 
     public void startEnvoyEvent() {
-        if(this.isActive()) {
-            System.out.println("[Envoy] Stopping previous envoy to start a new one");
+        tryStartEnvoyEvent();
+    }
+
+    public boolean tryStartEnvoyEvent() {
+        return tryStartEnvoyEvent(Bukkit.getOnlinePlayers().size());
+    }
+
+    boolean tryStartEnvoyEvent(int onlinePlayers) {
+        int crates = onlinePlayers > 15 ? onlinePlayers / 6 : 7;
+        List<Location> selected = selectLocations(getLocations(), crates);
+        if (selected.size() != crates) {
+            plugin.getLogger().warning("Envoy skipped: not enough distinct, loaded, empty locations. Add locations with /aenvoy setup.");
+            return false;
+        }
+        if (this.isActive()) {
             endEnvoyEvent();
         }
-
         this.updateLastEnvoyTime();
-
+        spawnCrates(selected);
         this.setActive(true);
-        this.handleCrateSpawning();
         this.plugin.getServer().getOnlinePlayers()
                 .stream()
-                .filter(Objects::nonNull) //TODO filter people with envoy messages enabled
+                .filter(Objects::nonNull)
                 .forEach(player -> sendEnvoyStartMessage(player, this.remainingCrates));
+        return true;
     }
 
     private void sendEnvoyStartMessage(Player player, int chests) {

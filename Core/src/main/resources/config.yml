@@ -124,3 +124,11 @@ blocked:
 
 players-trailers:
   - ''
+
+discord-webhooks:
+  gifts: ""
+  dupe-check: ""
+  more: ""
+  galaxy-rank: ""
+
+youtube-api-key: ""

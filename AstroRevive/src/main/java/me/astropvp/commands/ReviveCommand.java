@@ -99,7 +99,11 @@ public class ReviveCommand
     }
 
     public void sendWebHook(Player target, Player revivedBy, DeathInventory deathInventory) {
-        WebhookClientBuilder builder = new WebhookClientBuilder("https://discord.com/api/webhooks/1272074220939247729/8eZ7BwEbX5S4AJcVVO6jNDk9NBC4OPpQAGa6HetjHxrmMW42SgBnRkVIJVaEP1PmzeKK"); // or id, token
+        String webhookUrl = org.bukkit.configuration.file.YamlConfiguration.loadConfiguration(new java.io.File(this.inst.getDataFolder(), "webhooks.yml")).getString("discord-webhooks.revive", "");
+        if (webhookUrl.isEmpty()) {
+            return;
+        }
+        WebhookClientBuilder builder = new WebhookClientBuilder(webhookUrl); // or id, token
 
         builder.setThreadFactory((job) -> {
             Thread thread = new Thread(job);

@@ -1,0 +1,286 @@
+{
+  "source_commit": "10b09baceec81a2ea97407d9f81f142902182ac5",
+  "reactor_entries": [
+    "StorageUtil",
+    ".",
+    "Utils",
+    "Ark",
+    "Enchantments",
+    "AuctionHouse",
+    "SpaceChests",
+    "Bosses",
+    "Slotbot",
+    "Core",
+    "Attributes",
+    "CustomItems",
+    "Explosive",
+    "KoTHs",
+    "AstroDamageHandler",
+    "AstroArmorSets",
+    "ItemSkins",
+    "Duels",
+    "Conquest",
+    "Kits",
+    "Pets",
+    "Disguises",
+    "Masks",
+    "Dungeon",
+    "Lootboxes",
+    "Contest",
+    "EnchantmentsAPI",
+    "LootTable",
+    "LootFilter",
+    "AstroCollect",
+    "AstroEvents",
+    "AstroCrateKeys",
+    "CustomBlocks",
+    "CCVerify",
+    "AstroSpaceGrinding",
+    "Tournaments",
+    "AstroSpawnersMobcoins",
+    "AstroScoreboard",
+    "WeaponRunes",
+    "ItemFlip",
+    "AstroRevive",
+    "HotFix",
+    "FactionBanners",
+    "CosmicShop",
+    "NebulaShop",
+    "AstroCollectors",
+    "AstroGamble",
+    "GiftcardShop",
+    "AstroWildPvP",
+    "ProxyPatch",
+    "MobCoins",
+    "AstroCagePvP",
+    "Outpost",
+    "FactionLogs",
+    "AstroDiscordSync",
+    "AstroEnvoy",
+    "MysteryChests",
+    "AdminItems",
+    "AstroItemFilter",
+    "AstroChristmas",
+    "AstroFactionLogs",
+    "ShowcaseGUI",
+    "AstroCustomBlocks",
+    "Arcade",
+    "AstroKits",
+    "AstroSlotBot",
+    "WildPvP",
+    "Ruins",
+    "AstroBAH",
+    "HypeBoxes",
+    "WarzoneChests",
+    "AntiRightClick",
+    "PvPTop",
+    "Vouchers",
+    "ChatGames",
+    "SpaceRecode",
+    "LPXPatches"
+  ],
+  "native_tests": 127,
+  "suites": [
+    {
+      "module": "Ark",
+      "suite": "org.arkhamnetwork.Arkkit.libs.CommandMapFailureTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "Ark",
+      "suite": "org.arkhamnetwork.Arkkit.patches.ShowcaseExpanderCommandTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "AuctionHouse",
+      "suite": "me.recolance.auction.controller.ConfirmMenuEscrowTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "Core",
+      "suite": "net.astropvp.core.cosmiccoinflip.commands.CommandCoinFlipInputTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "Core",
+      "suite": "net.astropvp.core.listeners.CommandAliasArgumentsTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "Core",
+      "suite": "net.astropvp.core.listeners.DiscordSyncBadgesTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "Core",
+      "suite": "net.crankedpvp.staff.listeners.RandomTeleportListenerTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "Kits",
+      "suite": "me.cosmicpvp.CosmicGlobalKits.CosmicGlobalKitsAPITierTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "Kits",
+      "suite": "me.cosmicpvp.CosmicGlobalKits.database.SQLSettingsTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "Kits",
+      "suite": "me.cosmicpvp.CosmicGlobalKits.items.WildcardClaimTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "Kits",
+      "suite": "me.cosmicpvp.CosmicGlobalKits.libs.GlobalKitsUnlockTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "Kits",
+      "suite": "me.cosmicpvp.CosmicGlobalKits.permissions.KitPermissionGranterTest",
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "Kits",
+      "suite": "me.cosmicpvp.CosmicGlobalKits.struct.GlobalKitDataTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "CustomBlocks",
+      "suite": "com.conaxgames.customskulls.data.GrinderPersistenceTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "CustomBlocks",
+      "suite": "com.conaxgames.customskulls.tasks.MobGrinderRewardTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "Tournaments",
+      "suite": "me.kingsavaqe.astrotournaments.tasks.NoFlightTaskTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "Tournaments",
+      "suite": "me.kingsavaqe.astrotournaments.utils.LocationCompatibilityTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "AstroCollectors",
+      "suite": "me.venir.astrocollectors.collector.CollectorPersistenceTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "AstroCollectors",
+      "suite": "me.venir.astrocollectors.commands.CollectorGiveCommandTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "GiftcardShop",
+      "suite": "net.astropvp.giftcardshop.commands.CreateGiftcardCommandTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "Outpost",
+      "suite": "me.astropvp.outpost.task.NoFlyTaskTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "AstroEnvoy",
+      "suite": "me.kingsavaqe.astroenvoy.struct.EnvoySafetyTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "AstroBAH",
+      "suite": "com.decimatemc.blackmarketauction.AuctionJournalTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "module": "AstroBAH",
+      "suite": "com.decimatemc.blackmarketauction.RecoveryTest",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "review_tests_passed": 61,
+  "runner_tests_passed": 10,
+  "excluded": [
+    "AstroFactions",
+    "AstroFactions/modules/Main",
+    "AstroFactions/modules/Legacy",
+    "Trials",
+    "PlayerVaultsX"
+  ]
+}

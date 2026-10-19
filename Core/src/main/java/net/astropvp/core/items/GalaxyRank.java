@@ -111,10 +111,13 @@ public class GalaxyRank extends CosmicItem implements InventoryInteractable {
     }
 
 
-    private static final String DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1316690017195655168/KSsoCSg0jin0Vu61ih3YZ7lbHAUkri7MnLNI1_XFffM1FdzXUv-Cq2FK6XTVA6ipnLkV";
 
     public void sendWebHook(String playerName, long dupedAt, String itemName) {
-        WebhookClientBuilder builder = new WebhookClientBuilder(DISCORD_WEBHOOK_URL); // or id, token
+        String webhookUrl = net.astropvp.core.AstroCore.getInstance().getConfig().getString("discord-webhooks.galaxy-rank", "");
+        if (webhookUrl.isEmpty()) {
+            return;
+        }
+        WebhookClientBuilder builder = new WebhookClientBuilder(webhookUrl); // or id, token
 
         builder.setThreadFactory((job) -> {
             Thread thread = new Thread(job);

@@ -68,10 +68,13 @@ public class GiftCommand extends CommandBase {
     }
 
 
-    private static final String DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1310784744660664350/jGGMbcFMOJYhrJWZxIlmPlLQCOcmb793Q_Pwz1nzEvwevhTOe6sBolLQegTgDktRtcxo";
 
     public void sendWebHook(String playerName, String givenTo, long dupedAt, String itemName) {
-        WebhookClientBuilder builder = new WebhookClientBuilder(DISCORD_WEBHOOK_URL); // or id, token
+        String webhookUrl = net.astropvp.core.AstroCore.getInstance().getConfig().getString("discord-webhooks.gifts", "");
+        if (webhookUrl.isEmpty()) {
+            return;
+        }
+        WebhookClientBuilder builder = new WebhookClientBuilder(webhookUrl); // or id, token
 
         builder.setThreadFactory((job) -> {
             Thread thread = new Thread(job);

@@ -10,6 +10,7 @@
     <version>1.0</version>
 
     <modules>
+        <module>StorageUtil</module>
         <module>Utils</module>
         <module>Ark</module>
         <module>AuctionHouse</module>
@@ -33,9 +34,11 @@
         <module>Conquest</module>
         <module>Masks</module>
         <module>EnchantmentsAPI</module>
+        <module>LootTable</module>
         <module>CustomBlocks</module>
         <module>AstroSpaceGrinding</module>
         <module>Tournaments</module>
+        <module>LootFilter</module>
         <module>AstroSpawnersMobcoins</module>
         <module>AstroScoreboard</module>
         <module>WeaponRunes</module>
@@ -63,10 +66,7 @@
         <module>FactionLogs</module>
         <module>AstroDiscordSync</module>
         <module>AstroEnvoy</module>
-        <module>StorageUtil</module>
-        <module>LootFilter</module>
         <module>PlayerVaultsX</module>
-        <module>LootTable</module>
         <module>MysteryChests</module>
         <module>AdminItems</module>
         <module>AstroItemFilter</module>
@@ -89,7 +89,6 @@
         <module>ChatGames</module>
         <module>SpaceRecode</module>
         <module>LPXPatches</module>
-
     </modules>
 
     <properties>

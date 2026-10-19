@@ -9,6 +9,7 @@
     <version>0.1</version>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
@@ -20,15 +21,11 @@
         </repository>
         <repository>
             <id>paper-repo</id>
-            <url>https://papermc.io/repo/repository/maven-public/</url>
+            <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
         <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
-        </repository>
-        <repository>
-            <id>puha-repo</id>
-            <url>https://repo.puha.io/repo/</url>
         </repository>
     </repositories>
 
@@ -75,6 +72,9 @@
             <groupId>io.puharesource.mc</groupId>
             <artifactId>TitleManager</artifactId>
             <version>2.2.0</version>
+            <scope>system</scope>
+            <!-- Official release from github.com/Puharesource/TitleManager (repo.puha.io is gone) -->
+            <systemPath>${project.basedir}/../.lib/TitleManager-2.2.0.jar</systemPath>
         </dependency>
 
         <!-- New Cosmic Repos -->
@@ -115,7 +115,7 @@
             <systemPath>${project.basedir}/lib/ItemSkins-0.1.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>LootTable</artifactId>
             <version>1.0</version>
             <scope>system</scope>
@@ -254,28 +254,28 @@
             <systemPath>${project.basedir}/lib/CosmicMysteryChest.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>Enchantments</artifactId>
             <version>0.1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/Enchantments.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>SpaceChests</artifactId>
             <version>0.1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/CosmicSpaceChests.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>AuctionHouse</artifactId>
             <version>0.1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/Auction.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>Arkkit</artifactId>
             <version>0.1</version>
             <scope>system</scope>
@@ -303,14 +303,14 @@
             <systemPath>${project.basedir}/lib/CompilexPermissions_2_1_1_1.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>Duels</artifactId>
             <version>0.1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/CosmicDuel (1).jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>Conquest</artifactId>
             <version>0.1</version>
             <scope>system</scope>

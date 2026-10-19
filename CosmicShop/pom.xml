@@ -29,15 +29,11 @@
 
         <repository>
             <id>paper-repo</id>
-            <url>https://papermc.io/repo/repository/maven-public/</url>
+            <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
         <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
-        </repository>
-        <repository>
-            <id>puha-repo</id>
-            <url>https://repo.puha.io/repo/</url>
         </repository>
     </repositories>
 
@@ -88,7 +84,7 @@
             <systemPath>${project.basedir}/lib/Essentials.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>Arkkit</artifactId>
             <version>0.1</version>
             <scope>system</scope>

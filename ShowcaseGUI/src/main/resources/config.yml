@@ -1,5 +1,5 @@
 sql:
   username: root
-  password: '#}:p\W=L?Ycf4QR,'
+  password: ''
   database: showcases
-  hostname: 198.24.166.250
+  hostname: ''

@@ -26,7 +26,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>LootTable</artifactId>
             <version>1.0</version>
             <scope>system</scope>

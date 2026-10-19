@@ -71,7 +71,7 @@
         </repository>
         <repository>
             <id>ess-repo</id>
-            <url>http://repo.ess3.net/content/groups/essentials</url>
+            <url>https://repo.essentialsx.net/releases/</url>
         </repository>
     </repositories>
 
@@ -153,14 +153,14 @@
             <systemPath>${project.basedir}/lib/LibsDisguises.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>EnchantmentsAPI</artifactId>
             <version>0.1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/EnchantmentsAPI.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>LootTable</artifactId>
             <version>1.0</version>
             <scope>system</scope>
@@ -188,7 +188,7 @@
             <systemPath>${project.basedir}/lib/CCVerify-1.0.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>Arkkit</artifactId>
             <version>0.1</version>
             <scope>system</scope>

@@ -16,6 +16,8 @@ public class AstroRevivePlugin extends JavaPlugin {
 
     public void onEnable() {
         this.deathInventories = new ArrayList<>();
+        if (!new java.io.File(getDataFolder(), "webhooks.yml").exists())
+            saveResource("webhooks.yml", false);
         getServer().getPluginManager().registerEvents(new ReviveCommand(this), (Plugin)this);
         getCommand("revive").setExecutor(new ReviveCommand(this));
         int current = 0;

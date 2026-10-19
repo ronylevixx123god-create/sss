@@ -25,15 +25,11 @@
         </repository>
         <repository>
             <id>paper-repo</id>
-            <url>https://papermc.io/repo/repository/maven-public/</url>
+            <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
         <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
-        </repository>
-        <repository>
-            <id>puha-repo</id>
-            <url>https://repo.puha.io/repo/</url>
         </repository>
     </repositories>
 
@@ -216,28 +212,28 @@
             <systemPath>${project.basedir}/lib/CosmicMysteryChest.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>Enchantments</artifactId>
             <version>0.1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/Enchantments.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>SpaceChests</artifactId>
             <version>0.1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/CosmicSpaceChests.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>AuctionHouse</artifactId>
             <version>0.1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/Auction.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>Arkkit</artifactId>
             <version>0.1</version>
             <scope>system</scope>
@@ -265,14 +261,14 @@
             <systemPath>${project.basedir}/lib/CompilexPermissions_2_1_1_1.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>Duels</artifactId>
             <version>0.1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/CosmicDuel (1).jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.conaxgames</groupId>
+            <groupId>local.com.conaxgames</groupId>
             <artifactId>Conquest</artifactId>
             <version>0.1</version>
             <scope>system</scope>
@@ -283,7 +279,7 @@
             <artifactId>ban</artifactId>
             <version>0.1</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/Banana.jar</systemPath>
+            <systemPath>${project.basedir}/lib/banana.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.conaxgames</groupId>
